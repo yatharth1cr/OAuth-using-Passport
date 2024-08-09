@@ -8,7 +8,7 @@ router.get("/", function (req, res, next) {
 });
 
 router.get("/success", (req, res) => {
-  res.render("success");
+  res.render("success", { user: req.user });
 });
 
 router.get("/failure", (req, res) => {
@@ -24,4 +24,12 @@ router.get(
     res.redirect("/success");
   }
 );
+
+router.get("/logout", (req, res, next) => {
+  req.logout((err) => {
+    if (err) return next(err);
+    res.redirect("/");
+  });
+});
+
 module.exports = router;
