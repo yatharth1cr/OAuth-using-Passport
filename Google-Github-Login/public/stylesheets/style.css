@@ -1,0 +1,29 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  padding: 0.5rem;
+  margin: 1rem 0.5rem;
+  font-weight: bold;
+}
+
+.fa-brands {
+  margin-right: 8px;
+}
+
+.fa-google {
+  color: #fff;
+}
+
+.google {
+  color: black;
+  background: linear-gradient(45deg, #ea483a, #3aab58, #fbbe0d);
+}
+
+.github {
+  color: #fff;
+  background-color: #2b3034;
+}
