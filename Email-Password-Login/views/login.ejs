@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="/stylesheets/login.css" />
+  </head>
+  <body>
+    <div>
+      <form action="/login" method="post">
+        <h2>Login</h2>
+        <% if(error){ %>
+        <p><%= error %></p>
+        <% } %>
+        <input
+          type="text"
+          name="email"
+          class="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="text"
+          name="password"
+          class="password"
+          placeholder="Password"
+          required
+        />
+
+        <button>Login</button>
+      </form>
+    </div>
+  </body>
+</html>
