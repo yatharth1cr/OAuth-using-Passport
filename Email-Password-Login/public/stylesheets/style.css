@@ -1,0 +1,34 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  display: flex;
+  max-width: 200px;
+  flex-direction: column;
+}
+
+a {
+  color: white;
+  width: 40%;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5rem 0.75rem;
+  font-weight: bold;
+  border-radius: 6px;
+  margin: 2px;
+}
+
+.login {
+  background-color: lightcoral;
+}
+.login:hover {
+  border-radius: 0;
+  background-color: rgb(178, 94, 94);
+}
+
+.register {
+  background-color: darkslateblue;
+}
+.register:hover {
+  border-radius: 0;
+  background-color: rgb(54, 48, 87);
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Register</title>
+    <link rel="stylesheet" href="/stylesheets/register.css" />
+  </head>
+  <body>
+    <div>
+      <form action="/register" method="post">
+        <h2>Register</h2>
+        <% if(error){ %>
+        <p><%= error %></p>
+        <% } %>
+        <input
+          type="text"
+          name="name"
+          class="name"
+          placeholder="Name"
+          required
+        />
+        <input
+          type="text"
+          name="email"
+          class="email"
+          placeholder="Email"
+          required
+        />
+        <input
+          type="text"
+          name="password"
+          class="password"
+          placeholder="Password"
+          required
+        />
+        <button>Register</button>
+      </form>
+    </div>
+  </body>
+</html>

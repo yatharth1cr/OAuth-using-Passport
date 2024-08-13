@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= user.name %></title>
+    <link rel="stylesheet" href="/stylesheets/user.css" />
+  </head>
+  <body>
+    <div>
+      <a href="/" class="home">Home</a>
+      <h2>Login Successfull</h2>
+      <p>Welcome <%= user.name %></p>
+      <p>Email: <%= user.email %></p>
+      <a href="/register" class="register">Register New User</a>
+      <a href="/" class="login">Logout</a>
+    </div>
+  </body>
+</html>
